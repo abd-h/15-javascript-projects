@@ -1,3 +1,5 @@
 # 15 beginners Javascript projects
 
-. Created index.html and added link to index.css and index.js, navbar and main
+1. Color flipper
+
+2. Counter
