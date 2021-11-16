@@ -1,0 +1,34 @@
+::::::::::::::::::      app.js    ::::::::::::::::::  
+
+1. Declare colors variable and assign an array containg the following:
+        *green, red, rgb(133, 122, 200, #f15025)
+
+2. Declare a variable for the btn id 
+                 avariable for color class
+
+3.  Create function that generates a number beween 0 - 3
+
+4. add addEventListener to the btn variable and when clicked the following should happen:
+        *declare avariable called randomNumber and assign to getRandomNumber function
+        *change the color of the body by using the below code:
+                document.body.style.backgroundColor = colors[randomNumber]
+...........................................................
+
+::::::::::::::::::      hex.js    ::::::::::::::::::  
+
+1. Declare colors variable hex and assign an array containg the following:
+        * numbers ranging from 0 - 9
+        * and the alphabet from a to f only
+
+2. Declare a variable for the btn id 
+                 avariable for color class
+
+3.  Create function that generates a random number beween 0  and hex.length number
+
+4. add addEventListener to the btn variable and when clicked the following should happen:
+        *declare avariable called hexColor and assign to string that contains a just  #
+        *create for loop that loops only 6 times this is because hex color has only six charecters
+        *after each loop concat using += hex and use randomNumber function instead the i
+        *change the color of the body by using the below code:
+                document.body.style.backgroundColor = hexColor
+...........................................................
