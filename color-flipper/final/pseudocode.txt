@@ -3,8 +3,8 @@
 1. Declare colors variable and assign an array containg the following:
         *green, red, rgb(133, 122, 200, #f15025)
 
-2. Declare a variable for the btn id 
-                 avariable for color class
+2. Declare (i) a variable for the btn id and 
+                 (ii) avariable for color class
 
 3.  Create function that generates a number beween 0 - 3
 
