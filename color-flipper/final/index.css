@@ -156,7 +156,7 @@
         width: 100%;
         background: white;
         height: 3rem;
-        /* display: grid; */
+        display: grid;
         align-items: center;
         box-shadow: var(--dark-shadow);
     }
