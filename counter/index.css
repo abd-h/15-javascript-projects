@@ -1,0 +1,29 @@
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    text-transform: uppercase;
+    letter-spacing: 2.6px;
+}
+span,
+h1 {
+    font-size: 50px;
+}
+.container {
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+}
+.btn {
+    border: 2px solid rgb(2, 2, 68);
+    border-radius: 5px;
+    padding: 3px 18px;
+    margin: 40px 15px;
+    font-size: 15px;
+}
+.btn:hover {
+    color: white;
+    background: rgb(40, 40, 133);
+}
