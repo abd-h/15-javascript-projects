@@ -48,16 +48,57 @@ const job = document.getElementById("job");
 const info = document.getElementById("info");
 const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
-const randomBtn = document.querySelector(".random-btn ")
+const randomBtn = document.querySelector(".random-btn ");
+
+// Generating Random Number
+function randomNumber() {
+   return Math.floor(Math.random() * reviews.length)
+}
+console.log(randomNumber());
 
 // Set startinng items
 let currentItem = 0;
 
 // Load initial item
 window.addEventListener("DOMContentLoaded", function() {
-    const item = reviews[currentItem];
+    showPerson(currentItem);
+});  
+
+// Show person based on item
+function showPerson(person) {
+    const item = reviews[person];
     img.src = item.img;
     author.textContent = item.name;
     job.textContent = item.job;
     info.textContent = item.text;
-});  
+}
+
+// Show next person 
+
+nextBtn.addEventListener("click", function() {
+    console.log('just clicked button');
+    currentItem++;
+    if(currentItem > reviews.length -1) {
+        currentItem = 0
+    }
+    showPerson(currentItem);
+})
+
+// Show prev person
+
+prevBtn.addEventListener("click", function() {
+    console.log('just clicked button');
+    currentItem--;
+    if(currentItem < 0) {
+        currentItem = 0
+    }
+    showPerson(currentItem);
+})
+
+// Show random person
+
+randomBtn.addEventListener("click", function() {
+    console.log('just clicked button');
+    currentItem = randomNumber(currentItem);
+    showPerson(currentItem);
+})
