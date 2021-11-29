@@ -66,6 +66,9 @@ ul{
 }
 ul a {
     text-decoration: none;
+     padding: 10px 13px;
+     color: var(--clr-primary-5);
+     font-size: 1.5rem;
 }
 img:not(.logo) {
   width: 30%;
@@ -173,6 +176,13 @@ nav {
     justify-content: space-between;
     padding: 1rem;
 }
+/* i .div {
+    box-sizing: border-box;
+    width: 25px;
+    height: 3px;
+    background: var(--clr-primary-5);
+    margin: 5px 0;
+} */
 .nav-toggle {
     font-size: 1.5rem;
     color: var(--clr-primary-5);
@@ -181,8 +191,12 @@ nav {
     transition: var(-transition);
     cursor: pointer;
 }
+/* i .div:hover {
+    display: block;
+    background: var(--clr-primary-1)
+} */
 .nav-toggle:hover {
-    color: var(--clr-primary-1);
+    color: var(--clr-grey-1);
     transform: rotate(90deg);
 }
 .logo {
@@ -203,7 +217,9 @@ nav {
     padding-left: 1.5rem;
 }
 .social-icons {
-    display: none;
+    display: flex;
+   
+    align-items: center;
 }
 
 /* :::::::::::::::  By default hilde links  ::::::::::::::*/
